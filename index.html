@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <title>Главная</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <a href="./index.html" class="logo">TechShop</a>
+        <a href="./cart.html" class="cart">Корзина</a>
+    </header>
+    <div class="swiper header-slider">
+        <div class="info swiper-wrapper">
+            <div class="info__item swiper-slide">
+                <img class="info__img" src="img/delivery.svg" alt="delivery">
+                <div class="info__text">
+                    <h3 class="info__item-title">Доставка по России</h3>
+                    <p class="info__item-text">Осуществляется транспортными компаниями или Почтой России</p>
+                </div>
+            </div>
+
+            <div class="info__item swiper-slide">
+                <img class="info__img" src="img/pay.svg" alt="pay">
+                <div class="info__text">
+                    <h3 class="info__item-title">Online оплата на сайте</h3>
+                    <p class="info__item-text">Оплата производится банковской картой и электронными деньгами</p>
+                </div>
+            </div>
+
+            <div class="info__item swiper-slide">
+                <img class="info__img" src="img/sale.svg" alt="sale">
+                <div class="info__text">
+                    <h3 class="info__item-title">Система скидок</h3>
+                    <p class="info__item-text">Накопительные скидки и бонусная программа для наших клиентов</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="catalog">
+        <h2 class="catalog__title category-title">Каталог товаров</h2>
+        <div class="catalog__list">
+            <img src="img/loader.gif" class="catalog-loader loader" alt="Загрузка...">
+        </div>
+        <button class="catalog-button">Показать еще 
+            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 1.175L2.28841 5L6 8.825L4.85175 10L0 5L4.85175 0L6 1.175Z" fill="#828282"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="products">
+        <div class="products_header">
+            <h2 class="products__title category-title">Хиты продаж</h2>
+            <div class="pagination">
+                <button class="button-prev"><img src="img/arrow.svg" class="prev" alt="prev"></button>
+                <button class="button-next"><img src="img/arrow.svg" class="next" alt="next"></button>
+            </div>
+        </div>
+        <div class="swiper product-slider">
+            <div class="products__list swiper-wrapper">
+                <img src="img/loader.gif" class="products-loader loader" alt="Загрузка...">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-block">
+          <h2 class="form-title category-title">Форма заказа обратного звонка</h2>
+  
+          <form action="#" class="form">
+            <input type="text" placeholder="Имя" name="name" required minlength="3" maxlength="15"/>
+            <input type="email" placeholder="e-mail" name="mail" required />
+            <input type="phone" placeholder="Телефон" name="phone" pattern="[78][0-9]{9}" required />
+            <input type="text" placeholder="Какая тема вас интересует" name="theme" required />
+            <button type="submit" class="main-btn">Отправить вопрос</button>
+          </form>
+      </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/catalogApi.js"></script>
+<script src="js/productApi.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+    fetchCategories()
+    fetchProducts()
+</script>
+</body>
+</html>

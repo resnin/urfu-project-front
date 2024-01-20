@@ -1,0 +1,26 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__item {
+    display: flex;
+    width: 350px;
+    align-items: center;
+}
+
+.info__item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.info__text {
+    margin-left: 20px;
+}
+
+.info__item-text {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 20px;
+}

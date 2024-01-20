@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <title>Продукт</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <a href="./index.html" class="logo">TechShop</a>
+        <a href="./cart.html" class="cart">Корзина</a>
+    </header>
+
+    <div class="product-block">
+        <img src="" alt="" class="product-img">
+        <div class="product-content">
+            <h2 class="category-title"></h2>
+            <div class="product-reviews"></div>
+            <div class="stars">
+                
+            </div>
+            <div class="price">
+                <div class="new-price"></div>
+                <div class="old-price"></div>
+            </div>
+            <button class="products__item-button">В корзину</button>
+        </div>
+    </div>
+
+    <img style="display: block;" src="img/loader.gif" class="products-loader loader" alt="Загрузка...">
+</div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/catalogApi.js"></script>
+<script src="js/productApi.js"></script>
+<script src="js/script.js"></script>
+<script>
+    fetchSingleProduct()
+</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog__item {
+    width: 255px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.catalog__item:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+}
+
+.catalog__item-image {
+    width: 155px;
+    height: 155px;
+}
+
+.catalog__item-title {
+    margin-top: 19px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.catalog__item:hover .catalog__item-title {
+    cursor: pointer;
+    color: #2D9CDB;
+}
+
+.catalog__item-quantity {
+    margin-top: 33px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #828282;
+}
+
+.catalog__item-quantity:after {
+    content: ' товара';
+}
+
+.catalog__title {
+    margin-bottom: 3px;
+}
+
+.item-empty {
+    visibility: hidden;
+}
+
+.arrow-mobile {
+    display: none;
+    margin-left: 15px;
+}
+
+.catalog-button {
+    display: none;
+    border: 1px solid #2D9CDB;
+    border-radius: 5px;
+    background: transparent;
+    padding: 11px 21px;
+    align-items: center;
+    color: #2D9CDB;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-top: 15px;
+    gap: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.catalog-button svg path {
+    fill: #2D9CDB;
+    transition: .3s;
+}
+
+.catalog-button svg {
+    transform: rotate(-90deg);
+}
+
+.catalog-button:hover {
+    background: #2D9CDB;
+    color: #fff;
+}
+
+.catalog-button:hover svg path {
+    fill: #fff;
+}
+
+
+@media (max-width: 1350px) {
+    .catalog__list {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 610px) {
+    .catalog__list {
+        flex-direction: column;
+        margin-top: 18px;
+    }
+
+    .catalog__item {
+        flex-direction: row;
+        height: 60px;
+        justify-content: start;
+        margin-top: 0;
+        width: 100%;
+        padding: 13px 0;
+        border-bottom: 1px solid #EBF8FF;
+    }
+
+    .catalog__item:last-child {
+        border-bottom: 0;
+    }
+
+    .catalog__item-image {
+        width: 34px;
+        height: 34px;
+    }
+
+    .catalog__item-title {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #2D9CDB;
+        margin-left: 15px;
+        margin-top: 0;
+    }
+
+    .catalog__item-quantity {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: auto;
+    }
+
+    .catalog__item-quantity:after {
+        content: '';
+    }
+
+    .arrow-mobile {
+        display: block;
+    }
+}

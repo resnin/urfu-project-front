@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'SF UI Text';
+    src: url("../fonts/SFUIText-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url("../fonts/SFUIText-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url("../fonts/SFUIText-Light.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'SF UI Text';
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333333;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 57px 165px;
+}
+
+.category-title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 43px;
+    margin-top: 78px;
+}
+
+.loader {
+    margin: auto;
+}
+
+.pagination button {
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.main-btn {
+    background: #2D9CDB;
+    border-radius: 4px;
+    padding: 9px 10px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #FFFFFF;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 610px) {
+    .container {
+        padding: 30px 15px 45px;
+    }
+
+    .category-title {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 43px;
+    }
+}

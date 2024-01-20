@@ -1,0 +1,25 @@
+
+.cart-list {
+    width: 60%;
+    margin: 0  auto;
+    margin-top: 30px;
+}
+
+.cart-item {
+    padding: 10px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-item-img {
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 992px) {
+    .cart-list {
+        width: 100%;
+    }
+}
